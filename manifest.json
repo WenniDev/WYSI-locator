@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "WYSI Locator",
+
+  "author": "Whenever",
+  "description": "When You See It",
+  "version": "727",
+  "permissions": [
+    "tts",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions" : [
+    "*://*/*"
+  ],
+
+  "icons": {
+	"128": "img/icon_128.png",
+	"64": "img/icon_64.png",
+	"32": "img/icon_32.png",
+	"16": "img/icon_16.png"
+  },
+
+  "content_scripts": [
+	{
+	  "matches": ["*://*/*"],
+	  "js": ["js/jquery.js", "js/background.js"] 
+	}
+  ]
+}
