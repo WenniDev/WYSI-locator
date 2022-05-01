@@ -17,7 +17,9 @@
 
     }
 
-    $(document).ready( () => {
-        is727();
-    });
+
+    window.addEventListener("load", is727);
+    // $(document).ready( () => {
+    //     is727();
+    // });
 })();
